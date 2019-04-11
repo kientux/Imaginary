@@ -68,7 +68,7 @@ public class ImageFetcher {
       switch result {
       case .value(let image):
         // Try saving to storage
-        try? self.storage?.setObject(image, forKey: url.absoluteString)
+        ((try? self.storage?.setObject(image, forKey: url.absoluteString)) as ()??)
         completion(.value(image))
       case .error(let error):
         completion(.error(error))
@@ -95,7 +95,7 @@ public class ImageFetcher {
       }
 
       // Try saving to storage
-      try? self.storage?.setObject(image, forKey: url.absoluteString)
+      ((try? self.storage?.setObject(image, forKey: url.absoluteString)) as ()??)
       completion(.value(image))
     }
   }
