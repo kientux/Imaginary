@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = "Imaginary"
   s.summary          = "Remote images, as easy as one, two, three."
-  s.version          = "4.2.0"
+  s.version          = "4.3.0"
   s.homepage         = "https://github.com/hyperoslo/Imaginary"
   s.license          = 'MIT'
   s.author           = { "Hyper Interaktiv AS" => "ios@hyper.no" }
-  s.source           = { :git => "https://github.com/hyperoslo/Imaginary.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/kientux/Imaginary.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/hyperoslo'
 
   s.ios.deployment_target = '8.0'
@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation'
   s.dependency 'Cache', :git => 'https://github.com/kientux/Cache.git', :tag => '5.3.0'
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
 end
