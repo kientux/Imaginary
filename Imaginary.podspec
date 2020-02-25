@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.tvos.source_files = 'Sources/{iOS,Shared}/**/*'
 
   s.frameworks = 'Foundation'
-  s.dependency 'Cache', '~> 5.0'
+  s.dependency 'Cache', :git => 'https://github.com/kientux/Cache.git', :tag => '5.3.0'
 
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 end
