@@ -16,7 +16,7 @@ let package = Package(
             dependencies: [
                 "Cache",
             ],
-            path: "Sources/Shared",
+            path: "Sources/Shared"
         )
     ]
 )
