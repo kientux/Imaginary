@@ -13,7 +13,7 @@ let package = Package(
     targets: [
         .target(
             name: "Imaginary",
-            path: "Sources",
+            path: "Sources/Shared",
             dependencies: [
                 "Cache",
             ],
