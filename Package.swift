@@ -13,10 +13,10 @@ let package = Package(
     targets: [
         .target(
             name: "Imaginary",
-            path: "Sources/Shared",
             dependencies: [
                 "Cache",
             ],
+            path: "Sources/Shared",
         )
     ]
 )
